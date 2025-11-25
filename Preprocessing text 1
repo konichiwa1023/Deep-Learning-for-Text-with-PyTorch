@@ -1,0 +1,4 @@
+# Initialize and tokenize the text
+tokenizer = get_tokenizer("basic_english")
+tokens = tokenizer(text)
+print(tokens)
