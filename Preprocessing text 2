@@ -1,0 +1,8 @@
+# Initialize and tokenize the text
+tokenizer = get_tokenizer("basic_english")
+tokens = tokenizer(text)
+
+# Remove any stopwords
+stop_words = set(stopwords.words("english"))
+filtered_tokens = [token for token in tokens if token.lower() not in stop_words]
+print(filtered_tokens)
